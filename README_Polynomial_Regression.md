@@ -1,93 +1,78 @@
- Project Overview
+# Simple vs Polynomial Regression
 
-This project demonstrates the difference between Simple Linear Regression and Polynomial Regression using a Temperature–Pressure dataset.
-It helps understand how polynomial regression can model non-linear relationships, while linear regression is limited to straight-line predictions.
+## 📌 Project Overview
+This project demonstrates the **difference between Simple Linear Regression and Polynomial Regression** using a **Temperature–Pressure dataset**.  
+It helps understand how **polynomial regression can model non-linear relationships**, while linear regression is limited to straight-line predictions.
 
- Dataset
+---
 
-The dataset contains two columns:
+## 🗂 Dataset
+- The dataset contains **two columns**:  
+  1. **Temperature (X)** – Independent variable  
+  2. **Pressure (Y)** – Dependent variable
+- Example data:
 
-Temperature (X) – Independent variable
+| Temperature | Pressure |
+|------------|---------|
+| 1          | 30      |
+| 2          | 35      |
+| 3          | 50      |
+| 4          | 80      |
+| 5          | 130     |
 
-Pressure (Y) – Dependent variable
+- The dataset is stored in `poly.csv`.
 
-Example data:
+---
 
-Temperature	Pressure
-1	30
-2	35
-3	50
-4	80
-5	130
+## 🧰 Steps Performed
+1. **Import Libraries**: Pandas, NumPy, Matplotlib, Scikit-learn  
+2. **Load Dataset**: `poly.csv`  
+3. **Data Preprocessing**:  
+   - Removed unnecessary column (`sno`)  
+   - Separated independent (X) and dependent (y) variables  
+4. **Simple Linear Regression**:  
+   - Trained linear regression model  
+   - Predicted values  
+   - Evaluated using **MAPE**  
+   - Visualized regression line  
+5. **Polynomial Regression**:  
+   - Transformed X using `PolynomialFeatures(degree=3)`  
+   - Trained linear model on polynomial features  
+   - Predicted values  
+   - Evaluated using **MAPE**  
+   - Visualized polynomial curve  
+6. **Comparison**: Created a **table comparing actual, linear, and polynomial predictions**
 
-The dataset is stored in poly.csv.
+---
 
- Steps Performed
+## 📊 Key Results
+- Linear regression fits a straight line but **underfits non-linear data**  
+- Polynomial regression fits the curve better, reducing errors  
+- **MAPE** comparison shows **polynomial regression is more accurate**  
+- Visual plots clearly illustrate the difference
 
-Import Libraries: Pandas, NumPy, Matplotlib, Scikit-learn
+---
 
-Load Dataset: poly.csv
+## 📈 Plots
+1. **Linear Regression Plot** – Straight line vs actual data  
+2. **Polynomial Regression Plot** – Curve fitting actual data
 
-Data Preprocessing:
+---
 
-Removed unnecessary columns (sno)
+## 📝 Conclusion
+- For **non-linear relationships**, polynomial regression is preferable.  
+- Simple linear regression is suitable only when the relationship is approximately linear.  
+- Polynomial regression may **overfit** if the degree is too high; degree=3 is often a good balance.
 
-Separated independent (X) and dependent (y) variables
+---
 
-Simple Linear Regression:
+## 🔗 Colab Link
+[Open Notebook in Google Colab](https://colab.research.google.com/drive/1KXFprKJNhQk7FaE6_i-pbNQ842Nrrqf1?usp=sharing)
 
-Trained linear regression model
+---
 
-Predicted values
+## 🏷 Tags / Skills
+`Machine Learning` `Regression` `Polynomial Regression` `Linear Regression` `Python` `Scikit-learn` `Data Visualization`
 
-Evaluated using MAPE
-
-Visualized regression line
-
-Polynomial Regression:
-
-Transformed X using PolynomialFeatures(degree=3)
-
-Trained linear model on polynomial features
-
-Predicted values
-
-Evaluated using MAPE
-
-Visualized polynomial curve
-
-Comparison: Created a table comparing actual, linear, and polynomial predictions
-
- Key Results
-
-Linear regression fits a straight line but underfits non-linear data
-
-Polynomial regression fits the curve better, reducing errors
-
-MAPE comparison shows polynomial regression is more accurate
-
-Visual plots clearly illustrate the difference
-
- Plots
-
-Linear Regression Plot – Straight line vs actual data
-
-Polynomial Regression Plot – Curve fitting actual data
-
- Conclusion
-
-For non-linear relationships, polynomial regression is preferable.
-
-Simple linear regression is suitable only when the relationship is approximately linear.
-
-Polynomial regression may overfit if the degree is too high; degree=3 is often a good balance.
-
-🔗 Colab Link
-
-Open Notebook in Google Colab
-
-https://colab.research.google.com/drive/1KXFprKJNhQk7FaE6_i-pbNQ842Nrrqf1?usp=sharing
-
-🏷 Tags / Skills
 
 Machine Learning Regression Polynomial Regression Linear Regression Python Scikit-learn Data Visualization
