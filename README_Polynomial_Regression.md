@@ -1,9 +1,9 @@
-📌 Project Overview
+ Project Overview
 
 This project demonstrates the difference between Simple Linear Regression and Polynomial Regression using a Temperature–Pressure dataset.
 It helps understand how polynomial regression can model non-linear relationships, while linear regression is limited to straight-line predictions.
 
-🗂 Dataset
+ Dataset
 
 The dataset contains two columns:
 
@@ -22,7 +22,7 @@ Temperature	Pressure
 
 The dataset is stored in poly.csv.
 
-🧰 Steps Performed
+ Steps Performed
 
 Import Libraries: Pandas, NumPy, Matplotlib, Scikit-learn
 
@@ -58,7 +58,7 @@ Visualized polynomial curve
 
 Comparison: Created a table comparing actual, linear, and polynomial predictions
 
-📊 Key Results
+ Key Results
 
 Linear regression fits a straight line but underfits non-linear data
 
@@ -68,13 +68,13 @@ MAPE comparison shows polynomial regression is more accurate
 
 Visual plots clearly illustrate the difference
 
-📈 Plots
+ Plots
 
 Linear Regression Plot – Straight line vs actual data
 
 Polynomial Regression Plot – Curve fitting actual data
 
-📝 Conclusion
+ Conclusion
 
 For non-linear relationships, polynomial regression is preferable.
 
